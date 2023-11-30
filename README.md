@@ -10,7 +10,7 @@ git clone https://github.com/irtlab/CLI-Covariance-Optimizer
 cd CLI-Covariance-Optimizer
 ```
 
-Install required packages:
+Install required packages in editable mode:
 
 ```
 pip install -e .
