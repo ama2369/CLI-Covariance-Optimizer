@@ -31,5 +31,5 @@ optimize --help
 
 View stock data for a given ticker and date range. Date format: YYYY-MM-DD. 
 ```
-optimize ticker <ticker symbol> <start_date> <end_date>
+optimize ticker <ticker symbol> <start date> <end date>
 ```
