@@ -23,13 +23,13 @@ optimize ticker AAPL 2023-11-13 2023-11-18
 
 # Usage
 
-Inside the CLI, --help for an easily accessible description of commands. 
+Inside the CLI, use --help for an easily accessible description of commands. 
 
 ```
 optimize --help
 ```
 
-View stock data for a given ticker and date range. 
+View stock data for a given ticker and date range. Date format: <YYYY-MM-DD>. 
 ```
-optimize ticker <ticker symbol> <start_date> <end_date>. Date format: <YYYY-MM-DD>. 
+optimize ticker <ticker symbol> <start_date> <end_date>
 ```
