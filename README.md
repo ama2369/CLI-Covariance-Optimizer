@@ -15,3 +15,10 @@ Install required packages:
 ```
 pip install -e .
 ```
+
+# Usage
+
+- allow the user to input timeframe to consider historical return data (1, 3, 5 years etc)
+- allow the user to input any number of stocks (within reason, will probably edit this later)
+- the cli interface automatically gets the historical data for the stocks, but also allows the user to input their own historical data
+- the cli interface will output the covariance matrix calculation and also the proposed portfolio optimization (this part of the implementation will depend on Nancy and Tanis code)
