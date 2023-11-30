@@ -16,9 +16,20 @@ Install required packages in editable mode:
 pip install -e .
 ```
 
+To ensure a successful installation, run the following command to view stock data for a ticker and date range:
+```
+optimize ticker AAPL 2023-11-13 2023-11-18
+```
+
 # Usage
 
-- allow the user to input timeframe to consider historical return data (1, 3, 5 years etc)
-- allow the user to input any number of stocks (within reason, will probably edit this later)
-- the cli interface automatically gets the historical data for the stocks, but also allows the user to input their own historical data
-- the cli interface will output the covariance matrix calculation and also the proposed portfolio optimization (this part of the implementation will depend on Nancy and Tanis code)
+Inside the CLI, --help for an easily accessible description of commands. 
+
+```
+optimize --help
+```
+
+View stock data for a given ticker and date range. 
+```
+optimize ticker <ticker symbol> <start_date> <end_date>. Date format: <YYYY-MM-DD>. 
+```
