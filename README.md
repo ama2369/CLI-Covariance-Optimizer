@@ -18,7 +18,7 @@ pip install -e .
 
 To ensure a successful installation, run the following command to view stock data for a ticker and date range:
 ```
-optimize ticker AAPL 2023-11-13 2023-11-18
+optimize view AAPL 2023-11-13 2023-11-18
 ```
 
 # Usage
@@ -31,5 +31,5 @@ optimize --help
 
 View stock data for a given ticker and date range. Date format: YYYY-MM-DD. 
 ```
-optimize ticker <ticker symbol> <start_date> <end_date>
+optimize view <ticker symbol> <start_date> <end_date>
 ```
