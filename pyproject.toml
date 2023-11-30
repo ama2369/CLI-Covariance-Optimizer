@@ -15,6 +15,7 @@ classifiers = [
 requires-python = ">=3.9"
 dependencies = [
   "click",
+  "yfinance"
 ]
 
 [project.urls]
@@ -22,7 +23,7 @@ dependencies = [
 "Bug Tracker" = "https://github.com/ama2369/CLI-Covariance-Optimizer/issues"
 
 [project.scripts]
-optimize = "optimize.client:optimize"
+optimize = "optimize.client:cli"
 
 [tool.setuptools]
 packages = ["optimize"]
