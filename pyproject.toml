@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optimize"
+version = "0.1.0"
+description = "A simple CLI application for portfolio optimization"
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "click",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ama2369/CLI-Covariance-Optimizer"
+"Bug Tracker" = "https://github.com/ama2369/CLI-Covariance-Optimizer/issues"
+
+[project.scripts]
+optimize = "optimize.client:optimize"
+
+[tool.setuptools]
+packages = ["optimize"]
