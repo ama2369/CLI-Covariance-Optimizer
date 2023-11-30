@@ -6,7 +6,7 @@ In portfolio optimization, the covariance matrix of asset returns is a key input
 
 Please make sure you have a recent version of Python 3, preferably Python 3.9 or newer. Clone the repository into a local folder and enter the folder:
 ```
-git clone https://github.com/irtlab/CLI-Covariance-Optimizer
+git clone https://github.com/ama2369/CLI-Covariance-Optimizer
 cd CLI-Covariance-Optimizer
 ```
 
