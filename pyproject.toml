@@ -17,7 +17,6 @@ dependencies = [
   "click",
   "yfinance",
   "pandas",
-  "os",
 ]
 
 [project.urls]
