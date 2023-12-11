@@ -15,7 +15,9 @@ classifiers = [
 requires-python = ">=3.9"
 dependencies = [
   "click",
-  "yfinance"
+  "yfinance",
+  "pandas",
+  "os",
 ]
 
 [project.urls]
