@@ -25,13 +25,30 @@ optimize view AAPL 2023-11-13 2023-11-18
 
 # Usage
 
-Inside the CLI, use --help for an easily accessible description of commands. 
+Inside the CLI, use --help for an easily accessible description of commands. The date format is always YYYY-MM-DD. 
 
 ```
 optimize --help
 ```
 
-View stock data for a given ticker and date range. Date format: YYYY-MM-DD. 
+View stock data for a given ticker and date range.
 ```
-optimize view <ticker symbol> <start_date> <end_date>
+optimize view <ticker symbol> <start date> <end date>
 ```
+
+Calculate the covariance matrix for a data range with any number of tickers, each separated by a space. 
+```
+optimize covariance <start date> <end date> <tickers>
+```
+
+Custom data from a file in CSV format can also be used as input with the --file flag. The file must contain columns named in the format "Adj Close \<Ticker>". 
+```
+optimize covariance --file <file path>
+```
+
+To download a file in CSV format, you can run the following command for any number of tickers. 
+```
+optimize download <output directory> <start date> <end date> <tickers>
+```
+
+
