@@ -1,6 +1,6 @@
 import click
 import yfinance as yf
-from .covariance import calculate_covariance, calculate_portfolio_balance, optimize_weights
+from .covariance import calculate_covariance, optimize_weights
 import os
 import pandas as pd
 import numpy as np
@@ -105,7 +105,7 @@ def returns(start_date, end_date, tickers_and_weights):
         tickers = tickers_and_weights[::2]
         weights = np.array(tickers_and_weights[1::2], dtype=float)
 
-        if np.sum(weights) != 1:
+        if not np.isclose(np.sum(weights), 1.0, atol=0.01):
             raise ValueError("Sum of weights must be equal to 1.")
         
 
