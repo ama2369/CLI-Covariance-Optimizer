@@ -17,6 +17,10 @@ dependencies = [
   "click",
   "yfinance",
   "pandas",
+  "numpy",
+  "matplotlib",
+  "scipy",
+
 ]
 
 [project.urls]
