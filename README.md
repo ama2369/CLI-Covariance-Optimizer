@@ -88,4 +88,9 @@ To download stock data in CSV format, you can run the following command for any 
 optimize download <output directory> <start date> <end date> <tickers>
 ```
 
+For example, to download the stock data for Apple, Google, and Microsoft, use the following command:
+```
+optimize download . 2021-01-01 2022-01-01 AAPL GOOGL MSFT
+```
+
 
